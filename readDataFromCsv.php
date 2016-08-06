@@ -1,7 +1,7 @@
 <?php
 
 /**
- * [getCsv : conver csv to array]
+ * [getCsv : convert csv to array]
  * @return [type] [description]
  */
 function getCsv() {

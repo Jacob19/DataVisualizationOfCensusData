@@ -16,6 +16,7 @@ for ($i=1; $i < $last; $i++) {
 	
 	$income[] = $arr[$i][14];
 	if ($arr[$i][14] > 50000 && $arr[$i][14]<= 60000) {
+
 		$low_income[$i]['Age'] 							= $arr[$i][0];
 		$low_income[$i]['Work Class'] 			= $arr[$i][1];									
 		$low_income[$i]['Aadhar'] 					= $arr[$i][2];
@@ -34,5 +35,7 @@ for ($i=1; $i < $last; $i++) {
 	}
 }
 
+
+header('Content-type: application/json');
 // print_r($low_income);
 print_r(json_encode($low_income));
