@@ -3,7 +3,7 @@ var ctx = $('#myChart');
 
 var myChart = new Chart(ctx, {
     type: 'bar',
-    data: {
+    data: {  
         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
         datasets: [{
             label: '# of Votes',
