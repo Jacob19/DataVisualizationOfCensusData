@@ -133,7 +133,8 @@ function loadDoc2(obj) {
 			}
       };
   xhttp.open("POST", "../getIncome.php", true);
-  xhttp.send("sector="+sector);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("sector="+ sector);
 }
 
 
