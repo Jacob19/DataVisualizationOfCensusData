@@ -6,7 +6,8 @@ $arr = getCsv();
 $low_income = array();
 $income = array();
 
-$last = end(array_keys($arr));
+// $last = end(array_keys($arr));
+$last = key( array_slice($arr, -1, 1, TRUE));
 
 echo "<pre>";
 //print_r($arr);
