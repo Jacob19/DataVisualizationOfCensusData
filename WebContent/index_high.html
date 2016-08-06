@@ -18,6 +18,10 @@
 .dropdown {
     position: relative;
     display: inline-block;
+
+}
+.nav {
+  position: relative !important; z-index: 9999 !important;
 }
 
 .dropdown-content {
@@ -65,7 +69,7 @@
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Dashboard </a></li>
-			<div class="dropdown">
+			<div id="nav" class="dropdown" >
 				<button class="dropbtn">Income For Different Sector</button>
 				<div class="dropdown-content">
 					<a href="#" id="link1" onclick='loadDoc2(this)'>State Government</a>
