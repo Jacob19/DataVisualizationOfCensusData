@@ -2,6 +2,7 @@
 
 require_once ('readDataFromCsv.php');
 
+$arr = getCsv();
 $low_income = array();
 $income = array();
 
