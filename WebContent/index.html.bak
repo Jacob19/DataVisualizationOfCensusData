@@ -67,12 +67,12 @@
 			<div class="dropdown">
 				<button class="dropbtn">Income For Different Sector</button>
 				<div class="dropdown-content">
-					<a href="#" id="link1" onclick='loadDoc2(this)'>State Government</a>
-					<a href="#" id="link2" onclick='loadDoc2(this)'>Shelf Emloped</a>
-					<a href="#" id="link3" onclick='loadDoc2(this)'>Private</a>
-					<a href="#" id="link4" onclick='loadDoc2(this)'>Never Worked</a>
-					<a href="#" id="link5" onclick='loadDoc2(this)'>Shelf Emloped</a>
-					<a href="#" id="link6" onclick='loadDoc2(this)'>Federal-gov</a>
+					<a href="#" id="link1" onclick='loadDoc2()'>State Government</a>
+					<a href="#" id="link2" onclick='loadDoc2()'>Shelf Emloped</a>
+					<a href="#" id="link3" onclick='loadDoc2()'>Private</a>
+					<a href="#" id="link4" onclick='loadDoc2()'>Never Worked</a>
+					<a href="#" id="link5" onclick='loadDoc2()'>Shelf Emloped</a>
+					<a href="#" id="link6" onclick='loadDoc2()'>Federal-gov</a>
 				</div>
 			</div>
         <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> About</a></li>
