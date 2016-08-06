@@ -14,7 +14,7 @@ function getCsv() {
     return $arr;
 }
 
-$la_result1 = getkeyvaluepair ($file);
+//$la_result1 = getkeyvaluepair ($file);
 
 function getkeyvaluepair ($file) 
 {
