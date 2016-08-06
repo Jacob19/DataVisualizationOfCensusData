@@ -6,18 +6,28 @@ function loadDoc() {
       var data1 = xhttp.responseText;
       var data2 = JSON.parse(data1);
       console.log(data2);
+      var labels_all = [];
+      var data_all = [];
+      var temp = 0;
 			
 			var ctx = $('#myChart');
 			
 			for (var x in data2)
 			{
+				labels_all[temp] = x;
+				data_all[temp] = data2[x];
+				temp++;
+			}
+
+			console.log(labels_all);
+
 				var myChart = new Chart(ctx, {
 				    type: 'bar',
 				    data: {
-				        labels: [x],
+				        labels: labels_all,
 				        datasets: [{
-				            label: 'Income between 50K and 60K',
-				            data: [data2[x]],
+				            label: "Show/Hide",
+				            data: data_all,
 				            backgroundColor: [
 				                'rgba(255, 99, 132, 0.2)',
 				                'rgba(54, 162, 235, 0.2)',
@@ -48,8 +58,7 @@ function loadDoc() {
 				    }
 				});
 			}
-    }
-  };
+      };
   xhttp.open("POST", "../getIncome.php", true);
   xhttp.send();
 }
