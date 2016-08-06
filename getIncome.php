@@ -36,6 +36,5 @@ for ($i=1; $i < $last; $i++) {
 }
 
 
-header('Content-type: application/json');
 // print_r($low_income);
 print_r(json_encode($low_income));
