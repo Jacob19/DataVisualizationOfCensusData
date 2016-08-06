@@ -6,12 +6,7 @@ $incomeDiffSector = array();
 
 // $last = end(array_keys($arr));
 
-$count_income0 = 0;
-$count_income1 = 0;
-$count_income2 = 0;
-$count_income3 = 0;
-$count_income4 = 0;
-$count_income5 = 0;
+
 
 /**
  * [getIncomeBySector : this function is responsible for getting different sectors of income]
@@ -27,6 +22,12 @@ function getIncomeBySector($sector) {
         'Self Emloped Inc' => ' Self-emp-inc',
         'Federal Government' => ' Federal-gov'
     ];
+	$count_income0 = 0;
+	$count_income1 = 0;
+	$count_income2 = 0;
+	$count_income3 = 0;
+	$count_income4 = 0;
+	$count_income5 = 0;
     $sectorLevel = $getSector[$sector];
 
     $arr = getCsv();
