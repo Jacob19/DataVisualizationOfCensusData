@@ -1,3 +1,7 @@
 #navbar-top{
 	border-radius:0px;
 }
+
+li:hover {
+    background-color: #080808;
+}
