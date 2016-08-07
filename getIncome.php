@@ -77,3 +77,4 @@ function getIncomeBySector($sector) {
     return $incomeDiffSector;
 }
 echo(json_encode(getIncomeBySector($sector)));
+?>
