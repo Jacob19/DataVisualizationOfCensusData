@@ -59,7 +59,7 @@ function loadDoc() {
              }
              });*/
 
-            $('#container-fluid').highcharts({
+            $('#census-chart').highcharts({
                 chart: {
                     type: 'column'
                 },
