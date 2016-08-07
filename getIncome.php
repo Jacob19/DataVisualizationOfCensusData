@@ -14,10 +14,10 @@ $incomeDiffSector = array();
 function getIncomeBySector($sector) {
     $getSector = [
         'State Government' => " State-gov",
-        'Self Emloped Not Inc' => ' Self-emp-not-inc',
+        'Self Employed Not Inc' => ' Self-emp-not-inc',
         'Private' => ' Private',
         'Never Worked' => ' Never-worked',
-        'Self Emloped Inc' => ' Self-emp-inc',
+        'Self Employed Inc' => ' Self-emp-inc',
         'Federal Government' => ' Federal-gov'
     ];
     $count_income0 = 0;
@@ -62,12 +62,12 @@ function getIncomeBySector($sector) {
             $count_income5++;
         }
     }
-    $incomeDiffSector = array('Income lie between 40k to 50k' => $count_income0,
-        'Income lie between 50K to 60K' => $count_income1,
-        'Income lie between 60K to 70K' => $count_income2,
-        'Income lie between 70K to 80K' => $count_income3,
-        'Income lie between 80K to 90K' => $count_income4,
-        'Income lie between 90K to 100K' => $count_income5);
+    $incomeDiffSector = array('Income lies between 40k to 50k' => $count_income0,
+        'Income lies between 50K to 60K' => $count_income1,
+        'Income lies between 60K to 70K' => $count_income2,
+        'Income lies between 70K to 80K' => $count_income3,
+        'Income lies between 80K to 90K' => $count_income4,
+        'Income lies between 90K to 100K' => $count_income5);
 
     return $incomeDiffSector;
 }
