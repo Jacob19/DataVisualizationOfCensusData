@@ -1,58 +1,9 @@
 <!Doctype html>
-
+<html>
 <head>
-    <script src="js\lib\jquery-2.2.3.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <link href="css/bootstrap.css" rel="stylesheet">
+	<title>Census Report - 2016</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <style>
-        .dropbtn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .nav {
-            position: relative !important;
-            z-index: 9999 !important;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown:hover .dropbtn {
-            background-color: #3e8e41;
-        }
-    </style>
 </head>
 
 <body onload="loadDoc();">
@@ -104,11 +55,20 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <div id="container-fluid" style="min-width: 310px; height: 400px; margin-top: 0 auto"></div>
+    
+    
+    <div class="container">
+ 	   <div id="census-chart" style="min-width: 310px; height: 400px; margin-top: 0 auto">
+ 	   </div>
+    </div>
 
-
-
+	
+	<!-- JavaScript downloads -->
+    <script src="js\lib\jquery-2.2.3.js"></script>
+    <script src="js\lib\bootstrap.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="js/income_high.js"></script>
 
 </body>
-<html>
+</html>
