@@ -28,32 +28,32 @@ function getIncomeBySector($gender) {
     $last = key(array_slice($arr, -1, 1, TRUE));
     for ($i = 1; $i < $last; $i++) {
 
-        if (($arr[$i][14] > 40000 && $arr[$i][14] <= 50000) && $arr[$i][1] == $sectorLevel && $arr[$i][9] == $genderLevel) {
+        if (($arr[$i][14] > 40000 && $arr[$i][14] <= 50000) && $arr[$i][9] == $genderLevel) {
 
             $count_income0++;
         }
 
-        if (($arr[$i][14] > 50000 && $arr[$i][14] <= 60000) && $arr[$i][1] == $sectorLevel && $arr[$i][9] == $genderLevel) {
+        if (($arr[$i][14] > 50000 && $arr[$i][14] <= 60000) && $arr[$i][9] == $genderLevel) {
 
             $count_income1++;
         }
 
-        if (($arr[$i][14] > 60001 && $arr[$i][14] <= 70000) && $arr[$i][1] == $sectorLevel && $arr[$i][9] == $genderLevel) {
+        if (($arr[$i][14] > 60001 && $arr[$i][14] <= 70000) && $arr[$i][9] == $genderLevel) {
 
             $count_income2++;
         }
 
-        if (($arr[$i][14] > 70001 && $arr[$i][14] <= 80000) && $arr[$i][1] == $sectorLevel && $arr[$i][9] == $genderLevel) {
+        if (($arr[$i][14] > 70001 && $arr[$i][14] <= 80000) && $arr[$i][9] == $genderLevel) {
 
             $count_income3++;
         }
 
-        if (($arr[$i][14] > 80001 && $arr[$i][14] <= 90000) && $arr[$i][1] == $sectorLevel && $arr[$i][9] == $genderLevel) {
+        if (($arr[$i][14] > 80001 && $arr[$i][14] <= 90000) && $arr[$i][9] == $genderLevel) {
 
             $count_income4++;
         }
 
-        if (($arr[$i][14] > 90001 && $arr[$i][14] <= 100000) && $arr[$i][1] == $sectorLevel && $arr[$i][9] == $genderLevel) {
+        if (($arr[$i][14] > 90001 && $arr[$i][14] <= 100000) && $arr[$i][9] == $genderLevel) {
 
             $count_income5++;
         }
