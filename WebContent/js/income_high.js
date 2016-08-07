@@ -64,10 +64,10 @@ function loadDoc() {
                     type: 'column'
                 },
                 title: {
-                    text: 'Monthly Average Rainfall'
+                    text: 'State Government'
                 },
                 subtitle: {
-                    text: 'Source: WorldClimate.com'
+                    text: ''
                 },
                 xAxis: {
                     categories: labels_all,
@@ -76,13 +76,13 @@ function loadDoc() {
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'Rainfall (mm)'
+                        text: 'Frequency'
                     }
                 },
                 tooltip: {
                     headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
                     pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                        '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                        '<td style="padding:0"><b>{point.y} Number of People</b></td></tr>',
                     footerFormat: '</table>',
                     shared: true,
                     useHTML: true
@@ -94,7 +94,7 @@ function loadDoc() {
                     }
                 },
                 series: [{
-                        name: labels_all[0],
+                        name: 'Income (in Rupees)',
                         //data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
                         data: data_all
 
@@ -191,10 +191,10 @@ function loadDoc2(obj) {
                     type: 'column'
                 },
                 title: {
-                    text: 'Monthly Average Rainfall'
+                    text: sector
                 },
                 subtitle: {
-                    text: 'Source: WorldClimate.com'
+                    text: ''
                 },
                 xAxis: {
                     categories: labels_all,
@@ -203,13 +203,13 @@ function loadDoc2(obj) {
                 yAxis: {
                     min: 0,
                     title: {
-                        text: 'Rainfall (mm)'
+                        text: 'Frequency'
                     }
                 },
                 tooltip: {
                     headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
                     pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                        '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                        '<td style="padding:0"><b>{point.y} Number of People</b></td></tr>',
                     footerFormat: '</table>',
                     shared: true,
                     useHTML: true
@@ -221,7 +221,7 @@ function loadDoc2(obj) {
                     }
                 },
                 series: [{
-                        name: labels_all[0],
+                        name: 'Income (in Rupees)',
                         //data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
                         data: data_all
 
