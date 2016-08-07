@@ -1,3 +1,10 @@
+$('li > a').on('click',function(){
+	$(this).parent().addClass('active');
+	$(this).parent().siblings().removeClass('active');
+})
+
+
+
 function loadDoc() {
     //sector = document.getElementById("link").innerHTML;
     var xhttp = new XMLHttpRequest();

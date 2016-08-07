@@ -2,6 +2,6 @@
 	border-radius:0px;
 }
 
-li:hover {
+li:hover , li:active{
     background-color: #080808;
 }
